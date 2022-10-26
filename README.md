@@ -18,13 +18,13 @@ carb data.
 Preview:
 
 Homepage
-![](../../../Desktop/homepage.jpg)
+![](src/assets/images/homepage.jpg)
 
 Recipe page
-![](../../../Desktop/recipe-detail-page.jpg)
+![](src/assets/images/recipe-detail-page.jpg)
 
 Calculator
-![](../../../Desktop/calorie-calculator-page.jpg)
+![](src/assets/images/calorie-calculator-page.jpg)
 
 2. Installation
 
