@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+    <title>The Clueless Cook</title>
+</head>
+<body>
+
+<header class="outer-container__general">
+    <nav class="navigation-container outer-container__general">
+        <ul class="navigation__list-logo">
+            <li><a class="navigation__logo" href="index.html">the clueless cook</a></li>
+        </ul>
+        <ul class="navigation__list">
+            <li><a href="index.html">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="calorie-calculator.html">calculator</a></li>
+        </ul>
+    </nav>
+    <div class="header-hero-section__outer-container">
+        <div class="header-hero-section__inner-container">
+            <h1>delicious recipes.</h1>
+            <p>daily updated.</p>
+            <a href="#submit-form">
+                <button type="button" class="general-button">find recipes</button>
+            </a>
+        </div>
+    </div>
+    <div class="header__featured-recipes" id="fetch-header__recipe-data">
+        <div class="header__featured-recipes_inner" id="header__featured-recipes_inner_id">
+        </div>
+    </div>
+</header>
+
+<main class="outer-container__general">
+    <div class="main-search-recipe__outer-container">
+        <div class="main-search-recipe__inner-container">
+            <form id="submit-form">
+                <label for="searchQuery">
+                    <input type="text" name="searchQuery" id="searchQuery" placeholder="Recipe Search">
+                </label>
+                <label for="meal-type-input-field">
+                    <select name="meal-type" id="meal-type-input-field" class="search-recipe__dropdown-buttons">
+                        <option value="">Meal type</option>
+                        <option value="breakfast">Breakfast</option>
+                        <option value="dinner">Dinner</option>
+                        <option value="lunch">Lunch</option>
+                        <option value="snack">Snack</option>
+                        <option value="teatime">Teatime</option>
+                    </select>
+                </label>
+                <label for="cuisine-input-field">
+                    <select name="cuisine" id="cuisine-input-field" class="search-recipe__dropdown-buttons">
+                        <option value="">Cuisine</option>
+                        <option value="american">American</option>
+                        <option value="asian">Asian</option>
+                        <option value="british">British</option>
+                        <option value="caribbean">Caribbean</option>
+                        <option value="central europe">Central Europe</option>
+                        <option value="chines">Chinese</option>
+                        <option value="eastern europe">Eastern Europe</option>
+                        <option value="french">French</option>
+                        <option value="indian">Indian</option>
+                        <option value="italian">Italian</option>
+                        <option value="japanese">Japanese</option>
+                        <option value="kosher">Kosher</option>
+                        <option value="mediterranean">Mediterranean</option>
+                        <option value="mexican">Mexican</option>
+                        <option value="middle eastern">Middle Eastern</option>
+                        <option value="nordic">Nordic</option>
+                        <option value="south american">South American</option>
+                        <option value="south east asia">Soath East Asia</option>
+                    </select>
+                </label>
+                <label for="diet-input-field">
+                    <select name="diet" id="diet-input-field" class="search-recipe__dropdown-buttons">
+                        <option value="">Diet</option>
+                        <option value="balanced">Balanced</option>
+                        <option value="high-fiber">High-fiber</option>
+                        <option value="high-protein">High-protein</option>
+                        <option value="low-carb">Low-carb</option>
+                        <option value="low-fat">Low-fat</option>
+                        <option value="low-sodium">Low-sodium</option>
+                    </select>
+                </label>
+                <label for="time-of-recipe-input-field">
+                    <select name="time" id="time-of-recipe-input-field" class="search-recipe__dropdown-buttons">
+                        <option value="">Time</option>
+                        <option value="0-15">0 - 15 min</option>
+                        <option value="15-30">15 - 30 min</option>
+                        <option value="30-60">30 - 60 min</option>
+                        <option value="60+">60 min or more</option>
+                    </select>
+                </label>
+                <button type="submit" class="general-button" id="submit-recipe-search-query">search</button>
+            </form>
+        </div>
+    </div>
+    <div class="main-fetched-recipes__outer-container" id="fetched-recipe-data-search-query">
+    </div>
+</main>
+
+<!--FOOTER-->
+
+<footer id="about-info" class="about-info">
+    <div class="footer-inner-container">
+        <div class="footer-box-list">
+            <h4>information</h4>
+            <br>
+            <p>nullam a enim</p>
+            <p>quisque cursus</p>
+            <p>cras egestas</p>
+            <p>nunc vitae</p>
+        </div>
+
+        <div class="footer-box-list">
+            <h4>about</h4>
+            <br>
+            <p>quisque cursus</p>
+            <p>cras egestas</p>
+            <p>nunc vitae</p>
+        </div>
+
+        <div class="footer-box-list">
+            <h4>contact</h4>
+            <br>
+            <p>cras egestas</p>
+            <p>nunc vitae</p>
+            <p>nullam a enim</p>
+        </div>
+        <div id="footer-social-media" class="footer-box-list">
+            <h4>social</h4>
+            <br>
+            <div class="social-media-links">
+                <div class="icon-social-media">
+                    <img class="image-social-media" src="assets/icons/facebook.png" alt="search icon">
+                </div>
+                <div class="icon-social-media">
+                    <img class="image-social-media" src="assets/icons/instagram.png" alt="search icon">
+                </div>
+                <div class="icon-social-media">
+                    <img class="image-social-media" src="assets/icons/linkedin.png" alt="search icon">
+                </div>
+                <div class="icon-social-media">
+                    <img class="image-social-media" src="assets/icons/twitter.png" alt="search icon">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="main.js" type="module"></script>
+</body>
+</html>
+

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
+    <title>Calorie Calculator</title>
+</head>
+<body>
+
+<header class="outer-container__general">
+    <nav class="navigation-container outer-container__general">
+        <ul class="navigation__list-logo">
+            <li><a class="navigation__logo" href="index.html">the clueless cook</a></li>
+        </ul>
+        <ul class="navigation__list">
+            <li><a href="index.html">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="calorie-calculator.html">calculator</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="outer-container__general">
+    <div class="calorie-calculator__outer-container">
+        <div class="calorie-calculator__heading">
+            <h1>Calorie Calculator</h1>
+        </div>
+        <div class="calorie-calculator__search-bar">
+            <form id="submit-calorie-calculator__form">
+                <label for="searchQuery__calorie-calculator">
+                    <input type="text" name="searchQuery__calorie-calculator" id="searchQuery__calorie-calculator" placeholder="Product">
+                </label>
+                <button type="submit" class="general-button calorie-calculator__search-button">search</button>
+            </form>
+        </div>
+        <div class="calorie-calculator__fetchedCalorieData">
+
+            <table>
+                <thead>
+                <tr class="calorie-calculator-data__heading">
+                    <th>product</th>
+                    <th>quantity</th>
+                    <th>label</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="calorie-calculator-data" id="create-product-calorie-calculator">
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="calorie-calculator__add-servings">
+            <form id="calorie-calculator-add-amount__form">
+                <label for="calorie-calculator-add-amount__input-field">
+                    <input type="text" name="calorie-calculator-add-amount__input-field"
+                           id="calorie-calculator-add-amount__input-field" placeholder="Amount">
+                    serving(s)
+                </label>
+                <button type="submit" class="add-button">add</button>
+            </form>
+        </div>
+        <div class="calorie-calculator__addedCalorie-data">
+            <table id="calorie-calculator-addedCalorie-data__table">
+                <thead>
+                <tr class="calorie-calculator-data__heading">
+                    <th>product</th>
+                    <th>calories</th>
+                    <th>fat</th>
+                    <th>carbs</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="calorie-calculator-added-caloriedata__total calorie-calculator-data">
+                    <td>total</td>
+                    <td id="calorie-calculator__total-amount-of-calories"></td>
+                    <td id="calorie-calculator__total-amount-of-fat"></td>
+                    <td id="calorie-calculator__total-amount-of-carbs"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</main>
+
+<!--FOOTER-->
+
+<footer id="about-info" class="about-info">
+    <div class="footer-inner-container">
+        <div class="footer-box-list">
+            <h4>information</h4>
+            <br>
+            <p>nullam a enim</p>
+            <p>quisque cursus</p>
+            <p>cras egestas</p>
+            <p>nunc vitae</p>
+        </div>
+
+        <div class="footer-box-list">
+            <h4>about</h4>
+            <br>
+            <p>quisque cursus</p>
+            <p>cras egestas</p>
+            <p>nunc vitae</p>
+        </div>
+
+        <div class="footer-box-list">
+            <h4>contact</h4>
+            <br>
+            <p>cras egestas</p>
+            <p>nunc vitae</p>
+            <p>nullam a enim</p>
+        </div>
+        <div id="footer-social-media" class="footer-box-list">
+            <h4>social</h4>
+            <br>
+            <div class="social-media-links">
+                <div class="icon-social-media">
+                    <img class="image-social-media" src="assets/icons/facebook.png" alt="search icon">
+                </div>
+                <div class="icon-social-media">
+                    <img class="image-social-media" src="assets/icons/instagram.png" alt="search icon">
+                </div>
+                <div class="icon-social-media">
+                    <img class="image-social-media" src="assets/icons/linkedin.png" alt="search icon">
+                </div>
+                <div class="icon-social-media">
+                    <img class="image-social-media" src="assets/icons/twitter.png" alt="search icon">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="calorie-calculator.js" type="module"></script>
+</body>
+</html>
+

@@ -1,0 +1,819 @@
+/* ------------------------------- 1. Global Styles -------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+    /*CONTAINER-BORDER-COLOR*/
+
+/*.navigation-container {*/
+/*    border: 3px solid deeppink;*/
+/*}*/
+
+/*.navigation__list-logo {*/
+/*    border: 3px solid darkseagreen;*/
+/*}*/
+
+/*.navigation__list {*/
+/*    border: 3px solid blue;*/
+/*}*/
+
+/*.header-hero-section__outer-container {*/
+/*    border: 3px solid yellow;*/
+/*}*/
+
+/*.header-hero-section__inner-container {*/
+/*    border: 3px solid plum;*/
+/*}*/
+
+/*.header__featured-recipes {*/
+/*    border: 3px solid darkorchid;*/
+/*}*/
+
+/*.general-recipe-card__recipe-card {*/
+/*    border: 3px solid deepskyblue;*/
+/*}*/
+
+/*.main-search-recipe__inner-container {*/
+/*    border: 3px solid plum;*/
+/*}*/
+
+/*.about-info {*/
+/*    border: 3px solid deeppink;*/
+/*}*/
+
+/*.footer-inner-container {*/
+/*    border: 3px solid yellow;*/
+/*}*/
+
+/*.footer-box-list {*/
+/*    border: 3px solid mediumslateblue;*/
+/*}*/
+
+/*.outer-container-main-recipe {*/
+/*    border: 3px solid chartreuse;*/
+/*}*/
+
+/*.inner-container-main-recipe {*/
+/*    border: 3px solid blueviolet;*/
+/*}*/
+
+/*.title-and-time-image {*/
+/*    border: 3px solid greenyellow;*/
+/*}*/
+
+/*.recipe-text-and-image {*/
+/*    border: 3px solid blue;*/
+/*}*/
+
+/*.recipe-instructions {*/
+/*    border: 3px solid deeppink;*/
+
+/*}*/
+
+/*.recipe-picture {*/
+/*    border: 3px solid yellow;*/
+/*}*/
+
+/*.recipe-ingredients-and-nutrients {*/
+/*    border: 3px solid deepskyblue;*/
+/*}*/
+
+/*.recipe-ingredients {*/
+/*    border: 3px solid deeppink;*/
+/*}*/
+
+/*.recipe-nutrients {*/
+/*    border: 3px solid yellowgreen;*/
+/*}*/
+
+/*.recipe-health-labels-div {*/
+/*    border: 3px solid deeppink;*/
+/*}*/
+
+/*.calorie-calculator__outer-container {*/
+/*    border: 3px solid deepskyblue;*/
+/*}*/
+
+/*.calorie-calculator__heading {*/
+/*    border: 3px solid yellow;*/
+/*}*/
+
+/*.calorie-calculator__heading {*/
+/*    border: 3px solid deeppink;*/
+/*}*/
+
+/*.calorie-calculator__fetchedCalorieData {*/
+/*    border: 3px solid yellowgreen;*/
+/*}*/
+
+/*.calorie-calculator__add-servings {*/
+/*    border: 3px solid darkslateblue;*/
+/*}*/
+
+/*.calorie-calculator__addedCalorie-data {*/
+/*    border: 3px solid lawngreen;*/
+/*}*/
+
+
+
+
+    /*COLORS*/
+
+:root {
+    --main-focus-color: #283E53;
+    --main-contrast-color: #71B6BE;
+    --main-background-color-dark: #EEEEEE;
+    --main-background-color-light: #FFFFFF;
+    --main-shadow-color: #C0C0C0;
+    --main-shadow-color-light: #e1e1e1;
+}
+    /*TYPOGRAPHY*/
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.navigation__logo {
+    font-family: Austein, serif;
+    font-size: 28px;
+    color: var(--main-focus-color);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.navigation__list, .navigation__list-logo {
+    list-style-type: none;
+}
+
+.navigation__list li a {
+    text-decoration: none;
+    color: var(--main-focus-color);
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+h1 {
+    color: var(--main-focus-color);
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.header-hero-section__inner-container h1 {
+    color: var(--main-background-color-dark);
+    font-weight: 600;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.header-hero-section__inner-container p {
+    color: var(--main-background-color-dark);
+    text-transform: capitalize;
+    font-weight: 200;
+    font-size: 30px;
+    position: relative;
+    top: -8px;
+    margin-bottom: 10px;
+
+
+}
+
+
+
+.general-button, .add-button {
+    text-transform: capitalize;
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--main-focus-color);
+    text-align: left;
+}
+
+.add-button {
+    text-align: right;
+}
+
+.recipe-card__link {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.recipe-card__header {
+    font-size: 12px;
+    text-transform: capitalize;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*border: 3px solid deeppink;*/
+}
+
+.general-recipe-card__text-section h5 {
+    font-size: 12px;
+    text-transform: capitalize;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.general-recipe-card__text-section {
+    font-size: 9px;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #3b3a3a;
+
+}
+
+#searchQuery, #searchQuery__calorie-calculator, #calorie-calculator-add-amount__input-field {
+    font-size: 11px;
+}
+
+.search-recipe__dropdown-buttons {
+    font-size: 11px;
+    color: var(--main-focus-color);
+}
+
+.footer-box-list h4 {
+    text-transform: capitalize;
+    font-weight: normal;
+}
+
+.footer-box-list p {
+    font-weight: lighter;
+}
+
+    /*RECIPE PAGE*/
+
+.outer-container-main-recipe {
+    /*border: 3px solid red;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.inner-container-main-recipe {
+    /*border: 3px solid green;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 1050px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.title-and-time-image {
+    /*border: 3px solid blue;*/
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    margin-bottom: 2em;
+}
+
+.time-image-div-recipe {
+    /*border: 3px solid red;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 110px;
+}
+
+.time-text-recipe-number {
+    color: #283E55;
+    font-weight: bold;
+    font-size: large;
+}
+
+.time-text-recipe-minutes {
+    color: #283E55;
+    font-size: large;
+}
+
+.recipe-name {
+    /*border: 3px solid blue;*/
+    color: #283E55;
+}
+
+.recipe-text-and-image {
+    /*border: 3px solid red;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.recipe-instructions {
+    /*border: 3px solid green;*/
+    flex-basis: 500px;
+    color: #283E55;
+    font-weight: lighter;
+}
+
+.recipe-picture {
+    /*border: 3px solid red;*/
+    height: 400px;
+    width: 400px;
+}
+
+.recipe-image {
+    /*border: 3px solid blue;*/
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0 1px 1px, rgba(9, 30, 66, 0.13) 0 0 1px 1px;
+}
+
+.recipe-ingredients-and-nutrients {
+    /*border: 3px solid blue;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1050px;
+    margin-bottom: 2em;
+}
+
+.recipe-ingredients {
+    /*border: 3px solid green;*/
+    flex-basis: 400px;
+    color: #283E55;
+}
+
+.recipe-ingredients-title {
+    font-weight: 600;
+}
+
+.ingredients-ul {
+    margin-left: 2em;
+    font-weight: lighter;
+}
+
+.ingredients-ul li {
+    color: #283E55;
+}
+
+.recipe-nutrients {
+    /*border: 3px solid red;*/
+    flex-basis: 400px;
+}
+
+.recipe-nutrients-title {
+    color: #283E55;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.recipe-nutrients table {
+    /*border: 3px solid blue;*/
+    width: 400px;
+    font-weight: lighter;
+}
+
+.recipe-health-labels-div {
+    /*border: 3px solid blue;*/
+    color: #283E55;
+    width: 500px;
+}
+
+.recipe-health-labels-title {
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.recipe-health-labels p {
+    border: solid 1px #283E55;
+    background-color: #70B6BE;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: small;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.recipe-health-labels {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+/*//////////////calorie calculator page////////////////// */
+
+.calorie-calculator__outer-container {
+    color: var(--main-focus-color);
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.calorie-calculator__add-servings form {
+    text-transform: none;
+}
+
+.calorie-calculator-data__heading {
+    text-align: center;
+}
+
+#calorie-calculator__total-amount-of-calories,
+#calorie-calculator__total-amount-of-fat,
+#calorie-calculator__total-amount-of-carbs,
+.calorie-calculator-data__calories,
+.calorie-calculator-data__fat,
+.calorie-calculator-data__carbs {
+    text-transform: none;
+}
+
+    /*LAYOUT*/
+
+.outer-container__general {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+    /*border: 3px solid deeppink;*/
+}
+
+.general-button, .add-button {
+    background-color: var(--main-contrast-color);
+    border: 1px solid var(--main-focus-color);
+    border-radius: 3px;
+    padding: 8px 30px 8px 10px;
+    cursor: pointer;
+    min-width: 100px;
+    height: 28px;
+    position: relative;
+}
+
+.add-button {
+    min-width: 60px;
+    padding: 8px 10px 8px 10px;
+}
+
+.general-button::after {
+    content: "→";
+    position: absolute;
+    padding-left: 5px;
+    right: 10px;
+}
+
+.add-button::before {
+    content: "+";
+    position: absolute;
+    padding-right: 5px;
+    left: 12px;
+}
+
+/*RECIPE CARD GENERAL*/
+
+.general-recipe-card__recipe-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 32%;
+    position: relative;
+    height: 175px;
+    /*border: 3px solid black;*/
+}
+
+.general-recipe-card__recipe-image {
+    height: 120px;
+    width: 256px;
+    object-fit: cover;
+    border-radius: 3px 3px 0 0;
+}
+.general-recipe-card__calories-and-time {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0 5px 0;
+}
+
+.general-recipe-card__time {
+    display: flex;
+}
+
+.general-recipe-card__time img {
+    width: 11px;
+    height: 11px;
+    margin-right: 6px;
+}
+
+.general-recipe-card__text-section {
+    padding: 10px 15px 10px 16px;
+    background-color: var(--main-background-color-dark);
+    border: 1px solid var(--main-shadow-color-light);
+    box-shadow: 0 6px 15px -6px var(--main-shadow-color);
+    border-radius: 0 0 3px 3px;
+}
+
+    /*AREAS*/
+
+/* --------------- 4.1 Header ------------------- */
+
+/* --------------- 4.2 Header-Navigation ------------------- */
+
+.navigation-container {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    align-items: center;
+    background-color: var(--main-background-color-dark);
+}
+
+.navigation__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-basis: 100px;
+}
+
+.navigation__list li {
+    margin-left: 30px;
+}
+
+.navigation__list li :last-child {
+    padding-right: 10px;
+}
+
+.navigation__list-logo {
+    flex-basis: 600px;
+    padding-left: 10px;
+}
+
+/* --------------- 4.3 Header-Hero-section ------------------- */
+
+.header-hero-section__outer-container {
+    background-image: url("assets/images/hero-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    flex-basis: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.header-hero-section__inner-container {
+    min-width: 800px;
+    align-self: center;
+    margin-left: 10px;
+}
+
+/* --------------- 4.4 Header-Featured-recipes-section ------------------- */
+
+.header__featured-recipes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 800px;
+    align-self: center;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.header__featured-recipes_inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 300px;
+    margin-bottom: 30px;
+
+
+}
+.header-featured-recipes__recipe-card {
+    /*top: -15px;*/
+    /*z-index: 1;*/
+    justify-content: center;
+    /*border: 3px solid palevioletred;*/
+}
+
+.header-featured-recipes__recipe-card:nth-of-type(2) {
+    width: 36%;
+    top: -30px;
+    height: 215px;
+    z-index: 2;
+    box-shadow: 0 10px 20px 0 var(--main-shadow-color);
+}
+
+.header-featured-recipes__recipe-card:nth-of-type(2) > img {
+    height: 160px;
+    object-fit: cover;
+
+}
+
+/* --------------- 4.5 Main-Search-Recipe-section ------------------- */
+
+.main-search-recipe__outer-container {
+    background-color: var(--main-focus-color);
+    flex-basis: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.main-search-recipe__inner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 800px;
+}
+
+#searchQuery, .search-recipe__dropdown-buttons, #searchQuery__calorie-calculator, #calorie-calculator-add-amount__input-field {
+    padding-left: 10px;
+    height: 28px;
+    border-radius: 2px;
+    border: 1px solid var(--main-shadow-color);
+    margin: 5px;
+}
+
+.search-recipe__dropdown-buttons {
+    width: 90px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* --------------- 4.6 Main-Recipe-cards-section ------------------- */
+
+.main-fetched-recipes__outer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 800px;
+    flex-wrap: wrap;
+    align-self: center;
+    gap: 20px 12px;
+}
+
+/*FOOTER*/
+
+.about-info {
+    background-color: #283E53;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    /*border: 3px solid deeppink;*/
+
+}
+
+.footer-inner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 90px;
+    flex-basis: 600px;
+    margin: 30px;
+
+
+}
+
+.footer-box-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    /*border: 3px solid red;*/
+}
+
+.footer-inner-container h4 {
+    color: #71B6BD;
+}
+
+.footer-inner-container p {
+    color: #D1D2D6;
+    font-size: smaller;
+
+
+}
+
+.footer-inner-container p:first-letter {
+    text-transform: capitalize;
+
+}
+.footer-box-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#footer-social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.social-media-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1em;
+    /*border: 3px solid goldenrod;*/
+
+}
+
+.icon-social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #71B6BD;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+
+}
+
+.image-social-media {
+    height: 20px;
+    width: 20px;
+}
+
+
+
+/*///////////////Calorie Calculator page/////////////////*/
+
+/* --------------- 7. Calorie-calculator-page-Main ------------------- */
+
+.calorie-calculator__outer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 800px;
+    align-self: center;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+
+.calorie-calculator__heading,
+.calorie-calculator__search-bar,
+.calorie-calculator__fetchedCalorieData,
+.calorie-calculator__add-servings,
+.calorie-calculator__addedCalorie-data
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.calorie-calculator-data__heading th {
+    padding-right: 50px;
+    padding-bottom: 10px;
+}
+
+.calorie-calculator-data__heading th:last-child {
+    padding-right: 0;
+}
+
+.calorie-calculator-data td {
+    text-align: center;
+    padding-right: 50px;
+}
+
+.calorie-calculator-data td:first-child {
+    text-align: left;
+}
+
+.calorie-calculator-data td:last-child {
+    padding-right: 0;
+}
+
+.calorie-calculator__addedCalorie-data table {
+    border-collapse: collapse;
+}
+
+.calorie-calculator-data td {
+    padding-bottom: 10px;
+}
+
+.calorie-calculator-added-caloriedata__total td {
+    border-top: 1px solid var(--main-focus-color);
+    padding-top: 10px;
+}
+
+#searchQuery__calorie-calculator {
+    width:163px
+}
+
+.calorie-calculator__search-button, .add-button {
+    margin-left: 10px;
+}
+
+
+.calorie-calculator-data__calories::after {
+    content: " kcal";
+    position: relative;
+}
+
+.calorie-calculator-data__fat::after,
+.calorie-calculator-data__carbs::after {
+    content: " g";
+    position: relative;
+}
+
